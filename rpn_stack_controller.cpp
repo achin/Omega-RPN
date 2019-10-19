@@ -2,7 +2,7 @@
 #include "rpn_stack_controller.h"
 #include "app.h"
 #include "rpn_prompt_controller.h"
-#include "../i18n.h"
+#include <apps/i18n.h>
 #include "../shared/poincare_helpers.h"
 #include <assert.h>
 #include <poincare_nodes.h>
@@ -162,14 +162,6 @@ bool RpnStackController::isFull() {
     return true;
   }
   return false;
-}
-
-Poincare::Expression RpnStackController::exactCombine(size_t number) {
-  Poincare::Matrix e;
-  for (size_t i = 0; i < number; i++) {
-    e.addChildAtIndexInPlace(exact(number-i-1), i, i);
-  }
-  return e;
 }
 
 void RpnStackController::reloadAndScroll(int index) {
