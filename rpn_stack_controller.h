@@ -28,8 +28,11 @@ public:
   Stack& stack() { return *m_stack; }
   void erase(bool upTo);
 
-  bool approximate() { return m_stack->approximate; }
-  void setApproximate(bool approx) { m_stack->approximate = approx; }
+  bool approximate() { return m_rpnStack->approximate; }
+  void setApproximate(bool approx) { m_rpnStack->approximate = approx; }
+  bool full() { return m_rpnStack->full(); }
+  bool empty() { return m_rpnStack->length() == 0; }
+  Poincare::Expression exact(size_t index) { return m_rpnStack->exact(index); }
   void reloadAndScroll(int index = -1);
 
   bool empty() { return m_stack->empty(); }

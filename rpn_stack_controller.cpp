@@ -1,7 +1,6 @@
 #include "app.h"
-#include "rpn_content_view.h"
-#include "rpn_stack_controller.h"
-#include "rpn_input_controller.h"
+#include "rpn_prompt_controller.h"
+#include <apps/i18n.h>
 #include "../shared/poincare_helpers.h"
 #include <assert.h>
 #include <poincare_nodes.h>
@@ -118,18 +117,9 @@ I18n::Message StackController::operator()(Stack::SpecialOperation op) {
   return r;
 }
 
-I18n::Message StackController::operator()(Poincare::ExpressionNode::Type op) {
-  auto r = (*m_stack)(op, m_context);
-  if (r == I18n::Message::Default) {
-    reloadAndScroll();
-  }
-  return r;
-}
-
-I18n::Message StackController::operator()(I18n::Message op) {
-  auto r = (*m_stack)(op, m_context);
-  if (r == I18n::Message::Default) {
-    reloadAndScroll();
+void RpnStackController::reloadAndScroll(int index) {
+  if (index < 0 || index >= m_rpnStack->length()) {
+    index = m_rpnStack->length()-1;
   }
   return r;
 }
