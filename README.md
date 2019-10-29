@@ -5,6 +5,8 @@
   <a href="https://github.com/Omega-Numworks/Omega-RPN/issues"><img alt="Issues" src="https://img.shields.io/github/issues/Omega-Numworks/Omega-RPN.svg?logo=git&style=for-the-badge" /></a>
 </p>
 
+## About
+
 The RPN app for Numworks. This repository is a fork of [boricj/numworks-rpn](https://github.com/boricj/numworks-rpn). We made it to fix compatibility issues with [Omega](https://github.com/Omega-Numworks/Omega).
 
 ## Contributing
