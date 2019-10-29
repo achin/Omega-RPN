@@ -8,7 +8,6 @@ The RPN app for Numworks. This repository is a fork of [boricj/numworks-rpn](htt
 ## Contributing
 
 * For **new features and bug fixes**, please contribute on the main repository [here](https://github.com/boricj/numworks-rpn).
-
 * Otherwise, if you want to **fix a bug that affects only Omega**, you can do a [pull request](https://github.com/Omega-Numworks/Omega-RPN/pulls) or [post issues](https://github.com/Omega-Numworks/Omega-RPN/issues).
 
 ## Key mapping
