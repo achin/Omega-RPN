@@ -1,7 +1,9 @@
 <h1 align="center"><img src="https://github.com/Omega-Numworks/Omega-Design/blob/master/Omega-RPN.png" /></h1>
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?logo=creative%20commons&style=for-the-badge)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![GitHub issues](https://img.shields.io/github/issues/Omega-Numworks/Omega-RPN.svg?logo=git&style=for-the-badge)](https://github.com/Omega-Numworks/Omega-RPN/issues)
+<p align="center">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="cc by-nc-sa 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?logo=creative%20commons&style=for-the-badge" /></a>
+  <a href="https://github.com/Omega-Numworks/Omega-RPN/issues"><img alt="Issues" src="https://img.shields.io/github/issues/Omega-Numworks/Omega-RPN.svg?logo=git&style=for-the-badge" /></a>
+</p>
 
 The RPN app for Numworks. This repository is a fork of [boricj/numworks-rpn](https://github.com/boricj/numworks-rpn). We made it to fix compatibility issues with [Omega](https://github.com/Omega-Numworks/Omega).
 
