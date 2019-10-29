@@ -1,18 +1,19 @@
-# numworks-rpn
+<h1 align="center"><img src="https://github.com/Omega-Numworks/Omega-Design/blob/master/Omega-RPN.png" /></h1>
 
-This is a RPN calculator for NumWorks.
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?logo=creative%20commons&style=for-the-badge)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![GitHub issues](https://img.shields.io/github/issues/Omega-Numworks/Omega.svg?logo=git&style=for-the-badge)](https://github.com/Omega-Numworks/Omega-RPN/issues)
+
+RPN calculator app for Numworks.
 
 ## Getting started
 
-```
-git clone https://github.com/boricj/numworks-rpn.git apps/rpn
+This repository is a fork of [boricj/numworks-rpn](https://github.com/boricj/numworks-rpn). We made it to fix compatibility issues with [Omega](https://github.com/Omega-Numworks/Omega).
 
-# Quick test run on simulator
-make PLATFORM=simulator EPSILON_APPS='rpn settings'
+## Contributing
 
-# Complete firmware on hardware
-make EPSILON_APPS='rpn graph code statistics probability solver calculation sequence regression settings' epsilon_flash
-```
+* For **new features and bug fixes**, please contribute on the main repository [here](https://github.com/boricj/numworks-rpn).
+
+* Otherwise, if you want to **fix a bug that affects only Omega**, you can do a [pull request](https://github.com/Omega-Numworks/Omega-RPN/pulls) or [post issues](https://github.com/Omega-Numworks/Omega-RPN/issues).
 
 ## Key mapping
 - EXE: `DUP`
