@@ -21,3 +21,10 @@ The RPN app for Numworks. This repository is a fork of [boricj/numworks-rpn](htt
 - Left parenthesis: `ROT`
 - Space (alpha+'-'): Opposite
 - Equal (shift+pi): Switch between exact and approximation modes
+
+<details>
+  <summary><b>Screenshot</b></summary>
+  
+  ![RPN](https://github.com/Omega-Numworks/Omega-Design/blob/master/screenshots/Omega/rpn.png)
+
+</details>
