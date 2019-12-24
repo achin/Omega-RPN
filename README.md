@@ -28,3 +28,7 @@ The RPN app for Numworks. This repository is a fork of [boricj/numworks-rpn](htt
   ![RPN](https://github.com/Omega-Numworks/Omega-Design/blob/master/screenshots/Omega/rpn.png)
 
 </details>
+
+## License
+
+Omega-RPN is released under a [CC BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). NumWorks is a registered trademark.
