@@ -7,7 +7,7 @@ namespace Rpn {
 ContentView::ContentView(Responder * parentResponder, InputController * inputController, StackController * stackController) :
   View(),
   m_stackView(stackController, stackController, stackController),
-  m_inputView(parentResponder, m_textBuffer, sizeof(m_textBuffer), sizeof(m_textBuffer), inputController, inputController, KDFont::LargeFont),
+  m_inputView(parentResponder, m_textBuffer, sizeof(m_textBuffer), sizeof(m_textBuffer), inputController, inputController, KDFont::LargeFont, 0.0f, 0.5f, Palette::PrimaryText, Palette::ExpressionInputBackground),
   m_textBuffer("")
 {
 }
@@ -24,12 +24,13 @@ View * ContentView::subviewAtIndex(int index) {
 }
 
 void ContentView::layoutSubviews() {
-  KDCoordinate inputViewFrameHeight = 32;
+  KDCoordinate inputViewFrameHeight = 38;
   KDRect mainViewFrame(0, 0, bounds().width(), bounds().height() - inputViewFrameHeight);
   m_stackView.setFrame(mainViewFrame);
   KDRect inputViewFrame(0, bounds().height() - inputViewFrameHeight, bounds().width(), inputViewFrameHeight);
-  m_inputView.setLeftMargin(4);
+  m_inputView.setLeftMargin(5);
   m_inputView.setFrame(inputViewFrame);
+  m_inputView.setBackgroundColor(Palette::ExpressionInputBackground);
 }
 
 void ContentView::reload() {
