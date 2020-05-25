@@ -278,14 +278,13 @@ I18n::Message Stack::push(Expression e, Context &context) {
 }
 
 I18n::Message Stack::push(Element e) {
-  if (full()) {
-    return I18n::Message::StorageMemoryFull1;
-  }
   for (size_t i = k_stackSize-1; i > 0; i--) {
     m_stack[i] = m_stack[i-1];
   }
   m_stack[0] = e;
-  m_length++;
+  if (!full()) {
+    m_length++;
+  }
   return I18n::Message::Default;
 }
 
