@@ -20,8 +20,8 @@ public:
   int numberOfRows() const override { return m_stack->length(); }
   KDCoordinate rowHeight(int i) override;
   HighlightCell * reusableCell(int index, int type) override { return &m_cells[index]; }
-  int reusableCellCount(int type) { return Stack::k_stackSize; };
-  virtual int typeAtLocation(int i, int j) { return 0; }
+  int reusableCellCount(int type) override { return Stack::k_stackSize; };
+  virtual int typeAtLocation(int i, int j) override { return 0; }
   void willDisplayCellForIndex(HighlightCell * cell, int index) override;
 
   const char* operator[](size_t idx) const { return (*m_stack)[idx]; }
