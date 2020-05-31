@@ -42,7 +42,7 @@ I18n::Message Stack::operator()(const char *text, Context *context) {
 }
 
 I18n::Message Stack::operator()(StackOperation op) {
-  Element a, b, c;
+  Element a, b;
   I18n::Message r = I18n::Message::Default;
 
   switch (op) {
@@ -60,14 +60,8 @@ I18n::Message Stack::operator()(StackOperation op) {
       break;
     case ROT:
       a = m_stack[0];
-      b = m_stack[1];
-      c = m_stack[2];
       pop();
-      pop();
-      pop();
-      push(b);
-      push(a);
-      push(c);
+      m_stack[m_length++] = a;
       break;
     case OVER:
       a = m_stack[1];
