@@ -3,6 +3,7 @@
 
 #include <escher.h>
 #include "../shared/text_field_delegate_app.h"
+#include "rpn_selectable_table_view.h"
 
 namespace Rpn {
   class StackController;
@@ -26,7 +27,7 @@ public:
 private:
   void layoutSubviews(bool force = false) override;
 
-  SelectableTableView m_stackView;
+  RpnSelectableTableView m_stackView;
   TextField m_inputView;
   char m_textBuffer[TextField::maxBufferSize()];
 };

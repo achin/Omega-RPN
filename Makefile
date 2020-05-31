@@ -8,6 +8,7 @@ app_src += $(addprefix apps/rpn/,\
   rpn_stack_controller.cpp\
   rpn_stack.cpp\
   rpn_toolbox.cpp\
+  rpn_selectable_table_view.cpp\
 )
 
 i18n_files += $(addprefix apps/rpn/,\
